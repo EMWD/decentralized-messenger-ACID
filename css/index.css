@@ -1,0 +1,149 @@
+@font-face {
+    font-family: "themify";
+    src: url("../fonts/themify.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100vw;
+    height: 100vh;
+}
+
+body {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    grid-template-rows: 100%;
+}
+
+.side_panel {
+    height: 100%;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select:none;
+    user-select:none;
+    -o-user-select:none;
+}
+
+.msg_panel {
+    width: 100%;
+    height: 100%;
+}
+
+.msg_panel > * {
+    background: #f8f9fc;
+    width: 100%;
+    height: 100%;
+    color: #5a5c69;
+    padding: 10px;
+}
+
+.button {
+    color: #fff;
+    padding: .375rem .75rem;
+    background: #4e73df;
+    border-color: #4e73df;
+    border-radius: .35rem;
+    text-align: center;
+    transition: all linear 0.2s;
+    opacity: 0.8;
+    cursor: pointer;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select:none;
+    user-select:none;
+    -o-user-select:none;
+}
+
+.button:hover {
+    transition: all linear 0.2s;
+    opacity: 0.9;
+}
+
+.button:active {
+    transition: all linear 0.2s;
+    opacity: 1;
+}
+
+.conn:before {
+    font-family: "themify";
+    content: "\e665";
+}
+
+.power:before {
+    font-family: "themify";
+    content: "\e682";
+}
+
+.search:before {
+    font-family: "themify";
+    content: "\e610";
+}
+
+.cross:before {
+    font-family: "themify";
+    content: "\e646";
+}
+
+.file:before {
+    font-family: "themify";
+    content: "\e6a4";
+}
+
+.dir:before {
+    font-family: "themify";
+    content: "\e639";
+}
+
+.textbox {
+    font-size: .85rem;
+    border: solid 1px transparent;
+    background: #edeff8;
+    padding: .375rem .75rem;
+    font-weight: 400;
+    border-radius: .35rem;
+    color: #6e707e;
+}
+
+.textbox:focus {
+    border: solid 1px #d2dcf7;
+}
+
+.card {
+    display: inline-block;
+    border: 1px solid #e3e6f0;
+    border-radius: .35rem;
+    color: #858796;
+    background: #fff;
+    box-shadow: 0 .15rem 1.75rem 0 rgba(58,59,69,.15);
+}
+
+.card > div:first-child {
+    border-radius: calc(.35rem - 1px) calc(.35rem - 1px) 0 0;
+    background: #f8f9fc;
+    border-bottom: 1px solid #e3e6f0;
+    color: #4e73df;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+.card > div:nth-child(2) {
+    min-height: 100px;
+}
+
+.dialog {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}

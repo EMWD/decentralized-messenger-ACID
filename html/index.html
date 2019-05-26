@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Sechan</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/ui.css">
+    <script type="text/javascript" src="js/index.js"></script>
+    <script type="text/javascript" src="js/slider.js"></script>
+    <script type="text/javascript" src="js/client.js"></script>
+    <script type="text/javascript" src="js/messenger.js"></script>
+    <script type="text/javascript" src="js/file_dialog.js"></script>
+    <script type="text/javascript" src="js/search.js"></script>
+  </head>
+  <body>
+    <div class="side_panel connsearch_panel" data-side="0">
+      <div><input type="text" class="textbox" placeholder="Искать..." id="search_fld"/><span class="button search" id="search_btn"></span><span class="button cross" data-scontrol="2"></span></div>
+      <div class="card" style="width:100%;">
+	<div>Пиры</div>
+	<div id="search_peers"></div>
+      </div>
+    </div>
+    <div class="side_panel connsearch_panel" data-side="1">
+      <div>
+	<input type="text" class="textbox" placeholder="192.168.0.100" id="conn_fld"/>
+	<span class="button conn" data-scontrol="2" data-func="connectToPeer"></span>
+	<span class="button cross" data-scontrol="2"></span>
+      </div>
+    </div>
+    <div class="side_panel" id="peer_select_panel" data-side="2">
+      <div></div>
+    </div>
+    <div id="actions">
+      <div id="search">
+	<span title="Выход" class="button power" id="power_btn" data-scontrol="2"></span>
+	<span title="Подключиться к пиру" class="button conn" data-scontrol="1"></span>
+	<span title="Поиск пиров" class="button search" data-scontrol="0"></span>
+      </div>
+      <div id="messages"></div>
+      <div id="messanger"><span class="button file" title="Отправить файлы" id="file_btn"></span><input class="textbox" placeholder="Сообщение" id="send_fld"/><span class="button" id="send_btn">Отправить</span></div>
+    </div>
+  </body>
+</html>
